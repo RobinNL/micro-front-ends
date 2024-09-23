@@ -8,4 +8,26 @@ export const routes: Routes = [
     component: AppComponent,
     pathMatch: 'full',
   },
+  {
+    path: 'ondersteuning',
+    loadComponent: () =>
+      loadRemoteModule('support', './Component').then((m) => m.AppComponent),
+  },
 ];
+
+// {
+//   path: 'ondersteuning',
+//     loadChildren: () =>
+//   loadRemoteModule({
+//     remoteEntry: 'support',
+//     exposedModule: 'Routing'
+//   })
+//     .then(m => m.rotes)
+// },
+
+
+//
+// {
+//   path: 'ondersteuning',
+//     loadChildren: () => import('support/Routing').then(m => m.routes)
+// },

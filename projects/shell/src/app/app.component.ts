@@ -28,7 +28,6 @@ export class AppComponent implements AfterViewInit {
       remoteEntry: 'http://localhost:4201/remoteEntry.js',
       exposedModule: './Component'
     });
-    console.log(m, this.viewContainer);
     const ref = this.viewContainer.createComponent(m.NavbarComponent);
   }
 

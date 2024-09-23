@@ -6,7 +6,7 @@
     "start": "ng serve",
     "new:app": "ng g application",
     "new:microapp": "ng g @angular-architects/native-federation:init --type remote",
-    "start:all": "concurrently \"ng serve shell\" \"ng serve navbar\"",
+    "start:all": "concurrently \"ng serve shell\" \"ng serve navbar\" \"ng serve support\"",
     "build": "ng build",
     "build:navbar": "ng ",
     "watch": "ng build --watch --configuration development",
